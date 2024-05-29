@@ -1,4 +1,4 @@
-package poly.ex.pay1;
+package poly.ex.pay2;
 
 import java.util.Scanner;
 
