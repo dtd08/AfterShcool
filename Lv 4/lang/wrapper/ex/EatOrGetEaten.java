@@ -24,14 +24,10 @@ public class EatOrGetEaten {
 
             for (int j = 0; j < groupA.length; j++) {
                 for (int k = 0; k < groupB.length; k++) {
-                    if (groupA[j] <= groupB[k]) continue;
-                    cnt[i]++;
+                    if (groupA[j] > groupB[k]) cnt[i]++;
                 }
             }
             System.out.println(cnt[i]);
-        }
-        for(int i : cnt) {
-            System.out.println(i);
         }
     }
 }
