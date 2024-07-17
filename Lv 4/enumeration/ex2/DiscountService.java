@@ -1,7 +1,5 @@
 package enumeration.ex2;
 
-import enumeration.ex1.StringGrade;
-
 public class DiscountService {
     public int discount(ClassGrade classGrade, int price) {
         double discountPrice = 0;
