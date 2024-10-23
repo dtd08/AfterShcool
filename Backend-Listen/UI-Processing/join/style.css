@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.signup-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px #0000001a;
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+}
+
+.signup-container h2 {
+    color: #00b;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* 지정 크기만큼 딱 맞추는 속성. 이거 없으면 옆으로 삐져나옴 */
+}
+
+.input-group input::placeholder {
+    color: #00b;
+    opacity: 0.8;
+}
+
+/* js용 css */
+.balloon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: -230px;
+    transform: translateY(-50%);
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 200px;
+    box-shadow: 0 4px 10px #0000001a;
+    /* 
+    top으로 50%를 줘도 정확히 반에 위치시키지 않음 
+    요소의 왼쪽을 기준으로 이동하기 때문
+    transform은 가로 길이를 기준으로 이동시킴
+    */
+}
+
+.balloon::after {
+    /* after는 css에서 만든 가상의 공간 */
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    border: solid 10px;
+    border-color: transparent transparent transparent #ff6b6b;
+}
+
+
+.signup-container button {
+    width: 100%;
+    background-color: #00b;
+    color: #fff;
+    padding: 12px;
+    margin: 20px 0 10px 0 ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.signup-container button:hover {
+    background-color: #007;
+}

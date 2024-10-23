@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- defer = 비동기식으로 스크립트 불러오기 -->
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form action="#" id="signupForm">
+            <div class="input-group">
+                <input type="text" name="username" placeholder="이름" required>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" id="email" placeholder="이메일" required>
+                <!-- 오류 말풍선 -->
+                <span id="emailError" class="error-message balloon"></span>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" id="password" placeholder="비밀번호" required="required">
+                <span id="pwError" class="error-message balloon"></span>
+            </div>
+            <div class="input-group">
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="비밀번호 확인" required="required">
+                <span id="confirmPwError" class="error-message balloon"></span>
+            </div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <a href="../login/index.html" class="login-link">이미 계정이 있으신가요?</a>
+    </div>
+</body>
+</html>
